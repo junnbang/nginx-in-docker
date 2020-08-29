@@ -34,7 +34,7 @@ This project...
 > *These instructions are based on usage on Docker Machine, not Docker Desktop.*
 
 ## Instructions on how to stop the Docker container
-1. To stop all containers, type `docker-compose stop`.
+1. To stop all containers, type `docker-compose down`.
 2. To check if the containers are still online, type `docker ps`
 
 
