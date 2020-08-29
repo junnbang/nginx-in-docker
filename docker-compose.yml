@@ -1,0 +1,23 @@
+version: '3.1'
+services:
+    nginx_reverse_proxy:
+        image: nginx:latest
+        container_name: reverse_proxy_nginx
+        depends_on:
+          - flask-app
+        volumes:
+          - ./nginx-proxy/nginx.conf:/etc/nginx/nginx.conf
+        ports:
+            - 80:80
+            
+    flask-app:
+        image: junbang/flask-app
+        container_name: my-flask-app
+        ports:
+            - 8000:5000
+    
+    node-app:
+        image: junbang/node-app
+        container_name: my-node-app
+        ports:
+          - 8001:5001
