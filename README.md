@@ -31,7 +31,7 @@ This project...
 8. Completed! The Nginx server is now acting as the gateway between the client and the servers where the `/` path will be redirected to the flask server while the `/api` path will be redirected to the node server. 
 
 
-> *These instructions is based on usage on Docker Machine, not Docker Desktop.*
+> *These instructions are based on usage on Docker Machine, not Docker Desktop.*
 
 ## Instructions on how to stop the Docker container
 1. To stop all containers, type `docker-compose stop`.
